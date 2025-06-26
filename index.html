@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Realty Hub – A Smart Real Estate Marketplace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      background-color: #333;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin-right: 30px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+
+    .search-container {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .icons span {
+      font-size: 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .main-content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .welcome-text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .welcome-text h1 {
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .welcome-text p {
+      color: #666;
+      font-size: 18px;
+    }
+
+    .products {
+      display: flex;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 150px;
+      background-color: #eee;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .product h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .product p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .buy-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .search-container {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      .products {
+        justify-content: center;
+      }
+
+      .product {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <!-- Logo and Title -->
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>Digital Realty Hub</span>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search properties...">
+      </div>
+
+      <!-- Icons -->
+      <div class="icons">
+        <span title="Cart">🛒</span>
+        <span title="Wishlist">💖</span>
+        <span title="Notifications">🔔</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="welcome-text">
+      <h1>Welcome to Digital Realty Hub</h1>
+      <p>Explore smart listings for modern living spaces</p>
+    </div>
+
+    <div class="products">
+      <div class="product">
+        <div class="product-image">
+          <img src="Villa1.jpg" alt="3BHK Luxury Apartment" style="width: 100%; height: 150px; object-fit: cover;">
+        </div>
+        <h3>3BHK Luxury Apartment</h3>
+        <p>Located in Bangalore | Gated Society | Pool View</p>
+        <div class="price">₹1.2 Cr</div>
+        <button class="buy-button">View Details</button>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <img src="villa2.jpg" alt="Villa in Chennai" style="width: 100%; height: 150px; object-fit: cover;">
+        </div>
+        <h3>Villa in Chennai</h3>
+        <p>4BHK | Private Garden | Near IT Hub</p>
+        <div class="price">₹2.5 Cr</div>
+        <button class="buy-button">View Details</button>
+      </div>
+
+      <div class="product">
+        <div class="product-image">
+          <img src="villa3.jpg" alt="Studio Apartment" style="width: 100%; height: 150px; object-fit: cover;">
+        </div>
+        <h3>Studio Apartment</h3>
+        <p>Compact & Modern | Ideal for Singles | Pune</p>
+        <div class="price">₹45 Lakhs</div>
+        <button class="buy-button">View Details</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>2025 Digital Realty Hub. All rights reserved. Contact us: support@digitalrealtyhub.com</p>
+  </footer>
+
+</body>
+</html>
