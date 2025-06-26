@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Realty Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Body & Font Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 5px solid #3498db;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+
+        /* Main Content & Section Styling */
+        main {
+            padding: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            color: #2c3e50;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Underline effect for H2 */
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #3498db;
+            border-radius: 2px;
+        }
+
+        /* Team Grid Layout */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Team Member Card Styling */
+        .team-member-card {
+            background: #fdfdfd;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member-card img {
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 5px solid #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+            color: #34495e;
+        }
+
+        .member-role {
+            font-weight: 600;
+            color: #3498db;
+            margin: 0 0 1rem 0;
+            font-size: 1rem;
+        }
+
+        .member-description {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Digital Realty Hub – A Smart Real Estate Marketplace</h1>
+            <p>Meet the innovative team behind the platform.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our goal at Digital Realty Hub is to revolutionize the real estate industry by creating a seamless, intelligent, and data-driven marketplace. We connect buyers, sellers, and agents through a powerful platform that simplifies property transactions and provides unparalleled market insights.
+            </p>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+
+                <!-- Team Member 1 -->
+                <div class="team-member-card">
+                    <!-- Replace with your image path, e.g., "images/jane-doe.jpg" -->
+                    <img src="vish.jpg" alt="Photo of Vishwajeet Patil " height="10px">
+                    <h3>Vishwajeet Patil </h3>
+                    <p class="member-description">
+👋 Hi, I'm Vishwajeet from Bengaluru, Karnataka, a tech enthusiast and graduate of PES University. I’m passionate about web development and data-driven solutions, with hands-on skills in React, Flask, Express, MongoDB, and Python.🤖 I enjoy building automation tools, working on ML projects, and exploring data with Pandas, TensorFlow, and other data science libraries. Always eager to learn and innovate!
+
+                    </p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-member-card">
+                    <!-- Replace with your image path, e.g., "images/john-smith.jpg" -->
+                    <img src="IMG_9541.PNG" alt="Photo of Sivakumar Sekar">
+                    <h3>Sivakumar Sekar</h3>
+                    <p class="member-description">
+                       👨‍💻 I’m Sivakumar Sekar, a Computer Science Engineering graduate from RIT, Chennai. Passionate about AI, machine learning, and frontend development, I’ve built real-time projects using Python, React, and NLP.🎯 With internship experience at Intel Unnati and IITMRP CUBE, I love turning ideas into smart, user-friendly solutions. I’m now seeking full-time roles in software development, AI/ML, or frontend engineering.
+                    </p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-member-card">
+                    
+                    <img src="vansh.jpg" alt="Vansh Kumar Poddar">
+                    <h3>Vansh Kumar Poddar</h3>
+                    <p class="member-description">
+👋 I'm Vansh Kumar Poddar, an ECE graduate from NIT Silchar, rooted in Guwahati, Assam. With a solid foundation in C++, DSA, and SQL, I've built impactful projects like AI-text detection and multimodal sentiment analysis 🤖.💡 As a student leader, I’ve led club growth, secured sponsorships, and managed volunteer teams — sharpening both my analytical and people skills.🚀 I’m passionate about blending technology and strategy to create meaningful impact and solve real-world problems.
+
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Digital Realty Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
